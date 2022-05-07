@@ -19,41 +19,42 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="container header_options">
         <nav class="navigation">
-          <a class="link logo-header" href="./index.html" hreflang="en">
-            <span class="logo-style">Web</span>Studio
+          <a class="logo header__logo link" href="./index.html" hreflang="en">
+            <span class="logo_style">Web</span>Studio
           </a>
-          <ul class="list navigation-list">
-            <li class="nav-list-item">
-              <a class="link properties-link" href="./index.html"> Студия </a>
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link link" href="./index.html"> Студия </a>
             </li>
-            <li class="nav-list-item">
-              <a class="link current properties-link" href="./portfolio.html"> Портфолио </a>
+            <li class="navigation__item">
+              <a class="navigation__link current link" href="./portfolio.html"> Портфолио </a>
             </li>
-            <li class="nav-list-item">
-              <a class="link properties-link" href="#contacts">Контакты</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list communication communication-list">
+        <ul class="communication communication_options list">
           <li>
             <a
-              class="link properties-link communication-color-link communication-list-mailo"
+              class="communication_mailo_position communication_theme_color link"
               href="mailo:info@devstudio.com"
             >
-              <svg class="communication-icon" width="16" height="12">
+              <svg class="communication__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li>
-            <a class="link properties-link communication-color-link" href="tel:+380961111111">
-              <svg class="communication-icon" width="10" height="16">
+            <a class="link communication_theme_color" href="tel:+380961111111">
+              <svg class="communication__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+380961111111
             </a>
@@ -61,33 +62,35 @@
         </ul>
       </div>
     </header>
+
     <main>
       <section class="section">
         <div class="container">
           <!--ФИЛЬТРЫ-->
           <h1 class="visually-hidden">Фильтр</h1>
-          <ul class="list portfolio-filter-container">
-            <li class="button-properties-list">
-              <button class="portfolio-filter button-properties current" type="button">Все</button>
+          <ul class="list filter">
+            <li class="filter__item filter__item_position">
+              <button class="filter__button current" type="button">Все</button>
             </li>
-            <li class="button-properties-list">
-              <button class="portfolio-filter button-properties" type="button">Веб-сайты</button>
+            <li class="filter__item filter__item_position">
+              <button class="filter__button" type="button">Веб-сайты</button>
             </li>
-            <li class="button-properties-list">
-              <button class="portfolio-filter button-properties" type="button">Приложения</button>
+            <li class="filter__item filter__item_position">
+              <button class="filter__button" type="button">Приложения</button>
             </li>
-            <li class="button-properties-list">
-              <button class="portfolio-filter button-properties" type="button">Дизайн</button>
+            <li class="filter__item filter__item_position">
+              <button class="filter__button" type="button">Дизайн</button>
             </li>
-            <li class="button-properties-list">
-              <button class="portfolio-filter button-properties" type="button">Маркетинг</button>
+            <li class="filter__item filter__item_position">
+              <button class="filter__button" type="button">Маркетинг</button>
             </li>
           </ul>
+
           <!--ПРИМЕРЫ РАБОТ-->
-          <ul class="list portfolio-example-container">
-            <li class="portfolio-example-element">
-              <a class="link current portfolio-example-link" href="">
-                <div class="portfolio-work-example-wrapper">
+          <ul class="list example">
+            <li class="example__element">
+              <a class="link current example__link" href="">
+                <div class="example__wrapper">
                   <img
                     src="./images/portfolio1.jpg"
                     alt="Изображение ноутбука на котором открыта сраница сайта технокряк"
@@ -100,15 +103,15 @@
                     конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-work-example">
-                  <h2 class="portfolio-work-example-header">Технокряк</h2>
-                  <p class="portfolio-work-example-text">Веб-сайт</p>
+                <div class="work-example">
+                  <h2 class="work-example__header">Технокряк</h2>
+                  <p class="work-example__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-example-element">
-              <a class="link current portfolio-example-link" href="">
-                <div class="portfolio-work-example-wrapper">
+            <li class="example__element">
+              <a class="link current example__link" href="">
+                <div class="example__wrapper">
                   <img
                     src="./images/portfolio2.jpg"
                     alt="Изображение как двое мужчин играют в баскетбол"
@@ -121,17 +124,17 @@
                     конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-work-example">
-                  <h2 class="portfolio-work-example-header">
+                <div class="work-example">
+                  <h2 class="work-example__header">
                     Постер<span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="portfolio-work-example-text">Дизайн</p>
+                  <p class="work-example__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-example-element">
-              <a class="link current portfolio-example-link" href="">
-                <div class="portfolio-work-example-wrapper">
+            <li class="example__element">
+              <a class="link current example__link" href="">
+                <div class="example__wrapper">
                   <img
                     src="./images/portfolio3.jpg"
                     alt="Изображение рыбы с надписью названия ресторана"
@@ -144,17 +147,15 @@
                     конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-work-example">
-                  <h2 class="portfolio-work-example-header">
-                    Ресторан<span lang="en"> Seafood</span>
-                  </h2>
-                  <p class="portfolio-work-example-text">Приложение</p>
+                <div class="work-example">
+                  <h2 class="work-example__header">Ресторан<span lang="en"> Seafood</span></h2>
+                  <p class="work-example__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-example-element">
-              <a class="link current portfolio-example-link" href="">
-                <div class="portfolio-work-example-wrapper">
+            <li class="example__element">
+              <a class="link current example__link" href="">
+                <div class="example__wrapper">
                   <img
                     src="./images/portfolio4.jpg"
                     alt="Изображение наушников черного цвета"
@@ -167,15 +168,15 @@
                     конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-work-example">
-                  <h2 class="portfolio-work-example-header">Проект<span lang="en"> Prime</span></h2>
-                  <p class="portfolio-work-example-text">Маркетинг</p>
+                <div class="work-example">
+                  <h2 class="work-example__header">Проект<span lang="en"> Prime</span></h2>
+                  <p class="work-example__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-example-element">
-              <a class="link current portfolio-example-link" href="">
-                <div class="portfolio-work-example-wrapper">
+            <li class="example__element">
+              <a class="link current example__link" href="">
+                <div class="example__wrapper">
                   <img
                     src="./images/portfolio5.jpg"
                     alt="Изображение двух бумажных коробок белого и коричневого цвета"
@@ -188,15 +189,15 @@
                     конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-work-example">
-                  <h2 class="portfolio-work-example-header">Проект<span lang="en"> Boxes</span></h2>
-                  <p class="portfolio-work-example-text">Приложение</p>
+                <div class="work-example">
+                  <h2 class="work-example__header">Проект<span lang="en"> Boxes</span></h2>
+                  <p class="work-example__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-example-element">
-              <a class="link current portfolio-example-link" href="">
-                <div class="portfolio-work-example-wrapper">
+            <li class="example__element">
+              <a class="link current example__link" href="">
+                <div class="example__wrapper">
                   <img
                     src="./images/portfolio6.jpg"
                     alt="Изображение монитора на котором открыт веб-сайт компании"
@@ -209,17 +210,17 @@
                     конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-work-example">
-                  <h2 class="portfolio-work-example-header">
+                <div class="work-example">
+                  <h2 class="work-example__header">
                     <span lang="en">Inspiration has no Borders</span>
                   </h2>
-                  <p class="portfolio-work-example-text">Веб-сайт</p>
+                  <p class="work-example__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-example-element">
-              <a class="link current portfolio-example-link" href="">
-                <div class="portfolio-work-example-wrapper">
+            <li class="example__element">
+              <a class="link current example__link" href="">
+                <div class="example__wrapper">
                   <img
                     src="./images/portfolio7.jpg"
                     alt="Изображение расскрытой книги"
@@ -232,17 +233,17 @@
                     конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-work-example">
-                  <h2 class="portfolio-work-example-header">
+                <div class="work-example">
+                  <h2 class="work-example__header">
                     Издание<span lang="en"> Limited Edition</span>
                   </h2>
-                  <p class="portfolio-work-example-text">Дизайн</p>
+                  <p class="work-example__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-example-element">
-              <a class="link current portfolio-example-link" href="">
-                <div class="portfolio-work-example-wrapper">
+            <li class="example__element">
+              <a class="link current example__link" href="">
+                <div class="example__wrapper">
                   <img
                     src="./images/portfolio8.jpg"
                     alt="Изображение бумажной бирки с надписью"
@@ -255,15 +256,15 @@
                     конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-work-example">
-                  <h2 class="portfolio-work-example-header">Проект<span lang="en"> LAB</span></h2>
-                  <p class="portfolio-work-example-text">Маркетинг</p>
+                <div class="work-example">
+                  <h2 class="work-example__header">Проект<span lang="en"> LAB</span></h2>
+                  <p class="work-example__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-example-element">
-              <a class="link current portfolio-example-link" href="">
-                <div class="portfolio-work-example-wrapper">
+            <li class="example__element">
+              <a class="link current example__link" href="">
+                <div class="example__wrapper">
                   <img
                     src="./images/portfolio9.jpg"
                     alt="Изображение рук которые печатают на нойтбуке"
@@ -276,11 +277,11 @@
                     конкурентов.
                   </p>
                 </div>
-                <div class="portfolio-work-example">
-                  <h2 class="portfolio-work-example-header">
+                <div class="work-example">
+                  <h2 class="work-example__header">
                     <span lang="en">Growing Business</span>
                   </h2>
-                  <p class="portfolio-work-example-text">Приложение</p>
+                  <p class="work-example__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -288,64 +289,79 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
-      <div class="container foter-flex">
-        <div class="foter-information">
-          <a class="link logo-footer" href="./index.html" hreflang="en">
-            <span class="logo-style">Web</span>Studio
+      <div class="container foter__block">
+        <div class="foter__information">
+          <a class="logo footer__logo link" href="./index.html" hreflang="en">
+            <span class="logo_style">Web</span>Studio
           </a>
-          <address class="information" id="contacts">
+          <address class="address" id="contacts">
             <ul class="list">
-              <li class="address-list">
+              <li class="address__item address__item_position">
                 <a
-                  class="link address-link"
+                  class="link address__link"
                   href="https://goo.gl/maps/MdQDLqu88i6RNA2y6"
                   target="_blank"
                   rel="noopener noreferrer"
                   >г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="address-list">
-                <a class="link mailo-link" href="mailo:info@devstudio.com">info@devstudio.com </a>
+              <li class="address__item address__item_position">
+                <a class="link address__mailo" href="mailo:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
               </li>
-              <li class="address-list">
-                <a class="link phone-link" href="tel:+380961111111">+380961111111 </a>
+              <li class="address__item address__item_position">
+                <a class="link address__phone" href="tel:+380961111111">+380961111111 </a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social-media">
-          <p class="studio-social-media" lang="ru">Присоединяйтесь</p>
-          <ul class="social-media-list list">
-            <li class="social-media-list-item">
-              <a class="social-media-list-link" href="">
-                <svg class="icon-social-media-list" width="20" height="20">
+        <div class="media">
+          <p class="media__text" lang="ru">Присоединяйтесь</p>
+          <ul class="media__list list">
+            <li class="media__item media__item_position">
+              <a class="media__link" href="">
+                <svg class="media__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-media-list-item">
-              <a class="social-media-list-link" href="">
-                <svg class="icon-social-media-list" width="20" height="20">
+            <li class="media__item media__item_position">
+              <a class="media__link" href="">
+                <svg class="media__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-media-list-item">
-              <a class="social-media-list-link" href="">
-                <svg class="icon-social-media-list" width="20" height="20">
+            <li class="media__item media__item_position">
+              <a class="media__link" href="">
+                <svg class="media__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-media-list-item">
-              <a class="social-media-list-link" href="">
-                <svg class="icon-social-media-list" width="20" height="20">
+            <li class="media__item media__item_position">
+              <a class="media__link" href="">
+                <svg class="media__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+        <div class="mailing">
+          <form class="mailing__form">
+            <p class="mailing__header">Подпишитесь на рассылку</p>
+            <input class="mailing__email" name="email" id="email" placeholder="E-mail" />
+            <button class="mailing__button" type="submit">
+              Подписаться
+              <svg class="mailing__icon mailing__icon_position" width="24" height="24">
+                <use href="./images/icons.svg#icon-mailing"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
