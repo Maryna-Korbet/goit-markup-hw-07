@@ -534,10 +534,6 @@ body {
   margin-left: auto;
 }
 
-.communication-list-mailo {
-  margin-right: 50px;
-}
-
 .communication__position {
   margin-right: 30px;
 }
@@ -563,7 +559,7 @@ body {
 }
 
 /*-----СЕКЦИЯ HERO-----*/
-.hiro {
+.hero {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color-secondary);
