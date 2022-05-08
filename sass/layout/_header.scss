@@ -1,49 +1,47 @@
 /*-----HEADER-----*/
 .header {
-    background: #ffffff;
-    border-bottom: 1px solid #ececec;
+  background: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 .header_options {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navigation__list {
-    display: flex;
+  display: flex;
 }
 
 .navigation__item:not(:last-child) {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .navigation__link {
-    position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: var(--latter-spacing-minimum);
-    color: var(--color-theme-light-primary);
-    align-items: center;
-    cursor: pointer;
-    
-    &:hover,
-    &:focus {
-            color: var(--color-accent);
-        }
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: var(--latter-spacing-minimum);
+  color: var(--color-theme-light-primary);
+  align-items: center;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
 }
 
 .navigation__link.current {
-    color: #2196f3;
-
-    &::after {
+  color: #2196f3;
+  &::after {
     content: '';
     position: absolute;
     bottom: -3px;
@@ -52,47 +50,47 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--background-color-button);
-}
+  }
 }
 
 .communication {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: var(--latter-spacing-minimum);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: var(--latter-spacing-minimum);
 }
 
 .communication_options {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 
 .communication-list-mailo {
-    margin-right: 50px;
+  margin-right: 50px;
 }
 
 .communication_mailo_position {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .communication_theme_color {
-    color: var(--color-theme-light-secondary);
+  color: var(--color-theme-light-secondary);
 
-    &:hover ,
-    &:focus , 
-    &:active {
+  &:hover,
+  &:focus,
+  &:active {
     color: var(--color-accent);
-}
+  }
 }
 
 .communication__icon {
-    margin-right: 10px;
-    fill: var(--color-theme-light-secondary);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 10px;
+  fill: var(--color-theme-light-secondary);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .communication_theme_color:hover &,
-    .communication_theme_color:focus &,
-    .communication_theme_color:active & {
-        fill: var(--color-accent);
-    }
+  .communication_theme_color:hover &,
+  .communication_theme_color:focus &,
+  .communication_theme_color:active & {
+    fill: var(--color-accent);
+  }
 }
