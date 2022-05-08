@@ -61,7 +61,6 @@
         </ul>
       </div>
     </header>
-
     <main>
       <!--СЕКЦИЯ HERO-->
       <section>
@@ -74,7 +73,6 @@
           </button>
         </div>
       </section>
-
       <!--СЕКЦИЯ КАЧЕСТВА. Скрытый заголовок-->
       <section class="quality section">
         <div class="container">
@@ -127,7 +125,6 @@
           </ul>
         </div>
       </section>
-
       <!--СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ-->
       <section class="competencies competencies_position section">
         <div class="container">
@@ -175,7 +172,6 @@
           </ul>
         </div>
       </section>
-
       <!--СЕКЦИЯ НАША КОМАНДА-->
       <section class="team section">
         <div class="container">
@@ -192,7 +188,7 @@
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
                 <div class="social">
-                  <ul class="social__list list">
+                  <ul class="social__list social__center list">
                     <li class="social__item">
                       <a class="social__link social__link_light" href="">
                         <svg class="social__icon social__icon_light" width="20" height="20">
@@ -236,7 +232,7 @@
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
                 <div class="social">
-                  <ul class="social__list social__list_position list">
+                  <ul class="social__list social__center list">
                     <li class="social__item">
                       <a class="social__link social__link_light" href="">
                         <svg class="social__icon social__icon_light" width="20" height="20">
@@ -280,7 +276,7 @@
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
                 <div class="social">
-                  <ul class="social__list social__list_position list">
+                  <ul class="social__list social__center list">
                     <li class="social__item">
                       <a class="social__link social__link_light" href="">
                         <svg class="social__icon social__icon_light" width="20" height="20">
@@ -324,7 +320,7 @@
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
                 <div class="social">
-                  <ul class="social__list social__list_position list">
+                  <ul class="social__list social__center list">
                     <li class="social__item">
                       <a class="social__link social__link_light" href="">
                         <svg class="social__icon social__icon_light" width="20" height="20">
@@ -360,7 +356,6 @@
           </ul>
         </div>
       </section>
-
       <!--СЕКЦИЯ ПОСТОЯННЫЕ КЛИЕНТЫ-->
       <section class="clients section">
         <div class="container">
@@ -412,12 +407,11 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
-      <div class="container foter__block">
-        <div class="foter__information">
+      <div class="container block">
+        <div class="footer__information">
           <a class="logo logo_style_light link" href="./index.html" lang="en">
-            <span class="logo_style">Web</span>Studio
+            <span class="logo__style">Web</span>Studio
           </a>
           <address class="address" id="contacts">
             <ul class="list">
@@ -443,7 +437,7 @@
         </div>
         <div class="social">
           <p class="social__text" lang="ru">Присоединяйтесь</p>
-          <ul class="social__list list">
+          <ul class="social__list social__position list">
             <li class="social__element social__element_position">
               <a class="social__link social__link_dark" href="">
                 <svg class="social__icon social__icon_dark" width="20" height="20">
@@ -477,22 +471,23 @@
         <div class="mailing">
           <form class="mailing__form">
             <p class="mailing__header">Подпишитесь на рассылку</p>
-            <input class="mailing__email" name="email" id="email" placeholder="E-mail" />
-            <button class="mailing__button" type="submit">
-              Подписаться
-              <svg class="mailing__icon mailing__icon_position" width="24" height="24">
-                <use href="./images/icons.svg#icon-mailing"></use>
-              </svg>
-            </button>
+            <div class="mailing__interaction">
+              <input class="mailing__email" name="email" id="email" placeholder="E-mail" />
+              <button class="mailing__button" type="submit">
+                Подписаться
+                <svg class="mailing__icon mailing__icon_position" width="24" height="24">
+                  <use href="./images/icons.svg#icon-mailing"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
-
     <!--МОДАЛЬНОЕ ОКНО-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal_btn_close" data-modal-close>
+        <button type="button" class="btn-close" data-modal-close>
           <svg width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -544,7 +539,7 @@
             />
             <label for="accept-policy" class="chackbox__label">
               <span class="chackbox__text">Соглашаюсь с рассылкой и принимаю</span>
-              <a class="chackbox__text_color" href="">Условия договора</a>
+              <a class="chackbox__color" href="">Условия договора</a>
             </label>
           </div>
           <button type="submit" class="modal__button">Отправить</button>

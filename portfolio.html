@@ -66,21 +66,21 @@
         <div class="container">
           <!--ФИЛЬТРЫ-->
           <h1 class="visually-hidden">Фильтр</h1>
-          <ul class="filter list">
-            <li class="filter__item filter__item_position current">
-              <button class="filter__button" type="button">Все</button>
+          <ul class="list filter-container">
+            <li class="button-list">
+              <button class="portfolio-filter button-properties current" type="button">Все</button>
             </li>
-            <li class="filter__item filter__item_position">
-              <button class="filter__button" type="button">Веб-сайты</button>
+            <li class="button-list">
+              <button class="portfolio-filter button-properties" type="button">Веб-сайты</button>
             </li>
-            <li class="filter__item filter__item_position">
-              <button class="filter__button" type="button">Приложения</button>
+            <li class="button-list">
+              <button class="portfolio-filter button-properties" type="button">Приложения</button>
             </li>
-            <li class="filter__item filter__item_position">
-              <button class="filter__button" type="button">Дизайн</button>
+            <li class="button-list">
+              <button class="portfolio-filter button-properties" type="button">Дизайн</button>
             </li>
-            <li class="filter__item filter__item_position">
-              <button class="filter__button" type="button">Маркетинг</button>
+            <li class="button-list">
+              <button class="portfolio-filter button-properties" type="button">Маркетинг</button>
             </li>
           </ul>
           <!--ПРИМЕРЫ РАБОТ-->
@@ -287,10 +287,10 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container foter__block">
-        <div class="foter__information">
-          <a class="logo logo_style_light link" href="./index.html" hreflang="en">
-            <span class="logo_style">Web</span>Studio
+      <div class="container block">
+        <div class="footer__information">
+          <a class="logo logo_style_light link" href="./index.html" lang="en">
+            <span class="logo__style">Web</span>Studio
           </a>
           <address class="address" id="contacts">
             <ul class="list">
@@ -316,7 +316,7 @@
         </div>
         <div class="social">
           <p class="social__text" lang="ru">Присоединяйтесь</p>
-          <ul class="social__list list">
+          <ul class="social__list social__position list">
             <li class="social__element social__element_position">
               <a class="social__link social__link_dark" href="">
                 <svg class="social__icon social__icon_dark" width="20" height="20">
@@ -350,13 +350,15 @@
         <div class="mailing">
           <form class="mailing__form">
             <p class="mailing__header">Подпишитесь на рассылку</p>
-            <input class="mailing__email" name="email" id="email" placeholder="E-mail" />
-            <button class="mailing__button" type="submit">
-              Подписаться
-              <svg class="mailing__icon mailing__icon_position" width="24" height="24">
-                <use href="./images/icons.svg#icon-mailing"></use>
-              </svg>
-            </button>
+            <div class="mailing__interaction">
+              <input class="mailing__email" name="email" id="email" placeholder="E-mail" />
+              <button class="mailing__button" type="submit">
+                Подписаться
+                <svg class="mailing__icon mailing__icon_position" width="24" height="24">
+                  <use href="./images/icons.svg#icon-mailing"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
