@@ -47,12 +47,6 @@ ul {
   list-style: none;
 }
 
-.button-properties:hover,
-.button-properties:focus {
-  color: white;
-  background-color: #2196f3;
-}
-
 a {
   color: #212121;
   text-decoration: none;
@@ -120,7 +114,7 @@ body {
   margin-right: 92px;
 }
 
-.logo_style {
+.logo__style {
   color: #2196f3;
 }
 
@@ -459,8 +453,7 @@ body {
   background-color: var(--background-color-section-team);
   color: #212121;
   cursor: pointer;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter__button:hover, .filter__button:focus {
@@ -478,9 +471,10 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header_options {
+.header-container {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .navigation {
@@ -520,7 +514,7 @@ body {
 .navigation__link.current::after {
   content: '';
   position: absolute;
-  bottom: -3px;
+  bottom: -1px;
   display: block;
   width: 100%;
   height: 4px;
@@ -534,7 +528,7 @@ body {
   letter-spacing: var(--latter-spacing-minimum);
 }
 
-.communication_options {
+.communication-list {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -544,15 +538,15 @@ body {
   margin-right: 50px;
 }
 
-.communication_mailo_position {
+.communication__position {
   margin-right: 30px;
 }
 
-.communication_theme_color {
+.communication__color {
   color: var(--color-theme-light-secondary);
 }
 
-.communication_theme_color:hover, .communication_theme_color:focus, .communication_theme_color:active {
+.communication__color:hover, .communication__color:focus, .communication__color:active {
   color: var(--color-accent);
 }
 
@@ -562,9 +556,9 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.communication_theme_color:hover .communication__icon,
-.communication_theme_color:focus .communication__icon,
-.communication_theme_color:active .communication__icon {
+.communication__color:hover .communication__icon,
+.communication__color:focus .communication__icon,
+.communication__color:active .communication__icon {
   fill: var(--color-accent);
 }
 
